@@ -1,4 +1,5 @@
 *.swp
 *.pyc
+.vs
 env/
 settings.json

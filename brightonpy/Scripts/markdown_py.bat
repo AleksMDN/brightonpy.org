@@ -1,0 +1,1 @@
+@"c:\users\aleks\envs\brightonpy\scripts\python.exe" "c:\users\aleks\envs\brightonpy\Scripts\markdown_py" %*

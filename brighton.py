@@ -5,8 +5,9 @@ import datetime
 import markdown
 from urllib.parse import urljoin
 from datetime import timedelta
-from werkzeug import secure_filename
-from werkzeug.contrib.atom import AtomFeed
+#from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
+#from werkzeug.contrib.atom import AtomFeed
 from flask import Flask, render_template, Markup, abort, redirect, url_for, request
 
 app = Flask(__name__)
@@ -142,4 +143,4 @@ def format_datetime(datetime_object, format):
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
-    app.run(debug=False, host='0.0.0.0', port=port)
+    app.run(debug=True, host='0.0.0.0', port=port)
